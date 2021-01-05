@@ -1,6 +1,6 @@
 package com.example.mall.runner;
 
-import com.example.mall.biz.OrderService;
+import com.example.mall.biz.UserService;
 import com.example.mall.model.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -12,10 +12,10 @@ import org.springframework.stereotype.Component;
 public class CreateOrderRunner implements CommandLineRunner {
 
     @Autowired
-    OrderService orderService;
+    UserService userService;
     @Override
     public void run(String... args) throws Exception {
-        Order order = orderService.createOrder(1,1,1);
+        Order order = userService.book(1,1,1,2);
         order.getAmount();
     }
 }
