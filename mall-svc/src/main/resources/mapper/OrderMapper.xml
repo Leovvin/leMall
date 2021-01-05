@@ -3,7 +3,7 @@
 <mapper namespace="com.example.mall.mapper.OrderMapper">
 
     <insert id="create" useGeneratedKeys="true" keyProperty="id">
-        insert into tb_order (product_id,user_id,amount) values (#{productId},#{userId},#{amount})
+        insert into tb_order (product_id,user_id,amount) values (#{product.id},#{user.id},#{amount})
     </insert>
 
 </mapper>
