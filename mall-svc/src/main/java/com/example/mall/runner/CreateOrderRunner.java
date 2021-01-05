@@ -15,7 +15,7 @@ public class CreateOrderRunner implements CommandLineRunner {
     UserService userService;
     @Override
     public void run(String... args) throws Exception {
-        Order order = userService.book(1,1,1,2);
+        Order order = userService.book(1,1,1,1);
         order.getAmount();
     }
 }

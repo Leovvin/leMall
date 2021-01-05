@@ -15,7 +15,7 @@ public class UserService {
 
     @Transactional
     public Order book(long userId,long productId,long inventoryId,int amount){
-        if (!inventoryService.decreaseStock(inventoryId,amount)){
+        if (!inventoryService.increaseStockForUpdate(inventoryId,amount)){
             return null;
         }
 
