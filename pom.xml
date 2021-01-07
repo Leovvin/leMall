@@ -6,6 +6,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>mall-svc</module>
+        <module>sec-kill-svc</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
